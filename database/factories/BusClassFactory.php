@@ -17,7 +17,7 @@ class BusClassFactory extends Factory
             'bus_id' => $this->faker->randomNumber(),
             'name' => $this->faker->name(),
             'price' => $this->faker->randomFloat(),
-            'total_seats' => $this->faker->randomElement([20, 30, 40]),
+            'total_seats' => 10,
         ];
     }
 

@@ -14,7 +14,7 @@ class BusFactory extends Factory
         return [
             'name' => $this->faker->name(),
             'number' => $this->faker->word(),
-            'total_seats' => $this->faker->randomElement([20, 30, 40, 50, 60, 70, 80, 90, 100]),
+            'total_seats' => 30,
         ];
     }
 }

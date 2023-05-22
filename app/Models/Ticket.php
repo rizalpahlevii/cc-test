@@ -31,4 +31,19 @@ class Ticket extends Model
     {
         return $this->hasMany(TicketDetail::class);
     }
+
+    public function isUnpaid(): bool
+    {
+        return $this->payment_status == 'unpaid';
+    }
+
+    public function isPaid(): bool
+    {
+        return $this->payment_status == 'paid';
+    }
+
+    public function isCanceled(): bool
+    {
+        return $this->payment_status == 'canceled';
+    }
 }
